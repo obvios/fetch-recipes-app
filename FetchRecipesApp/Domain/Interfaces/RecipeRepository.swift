@@ -11,6 +11,6 @@ enum RecipeRepositoryError: Error {
     case malformedData
 }
 
-protocol RecipeRepositoryProtocol {
+protocol RecipeRepository {
     func fetchRecipes() async throws -> [Recipe]
 }

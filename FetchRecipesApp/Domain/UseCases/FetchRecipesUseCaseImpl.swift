@@ -8,9 +8,9 @@
 import Foundation
 
 class FetchRecipesUseCaseImpl: FetchRecipesUseCase {
-    private let repository: RecipeRepositoryProtocol
+    private let repository: RecipeRepository
     
-    init(repository: RecipeRepositoryProtocol) {
+    init(repository: RecipeRepository) {
         self.repository = repository
     }
     

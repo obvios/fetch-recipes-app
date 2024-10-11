@@ -7,7 +7,7 @@
 
 import Foundation
 
-class DefaultRecipeRepository: RecipeRepositoryProtocol {
+class DefaultRecipeRepository: RecipeRepository {
     private let apiClient: RecipeAPIClient
     
     init(apiClient: RecipeAPIClient) {
