@@ -6,3 +6,7 @@
 //
 
 import Foundation
+
+protocol FetchRecipesUseCase {
+    func execute() async throws -> [Recipe]
+}
