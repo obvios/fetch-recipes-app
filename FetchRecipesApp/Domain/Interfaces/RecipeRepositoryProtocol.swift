@@ -7,6 +7,10 @@
 
 import Foundation
 
+enum RecipeRepositoryError: Error {
+    case malformedData
+}
+
 protocol RecipeRepositoryProtocol {
     func fetchRecipes() async throws -> [Recipe]
 }
