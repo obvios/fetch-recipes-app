@@ -7,6 +7,10 @@
 
 import Foundation
 
+enum FetchRecipesUseCaseError: Error {
+    case emptyData
+}
+
 protocol FetchRecipesUseCase {
     func execute() async throws -> [Recipe]
 }
