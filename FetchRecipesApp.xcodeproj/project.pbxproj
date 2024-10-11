@@ -100,7 +100,7 @@
 				55AB38DC2CB985EA00DE9C33 /* Presentation */,
 				55AB38B12CB9850300DE9C33 /* FetchRecipesApp.swift */,
 				55AB38B32CB9850300DE9C33 /* ContentView.swift */,
-				55AB38B52CB9850400DE9C33 /* Assets.xcassets */,
+				55AB38E02CB9877E00DE9C33 /* Resources */,
 				55AB38B72CB9850400DE9C33 /* FetchRecipesApp.entitlements */,
 				55AB38B82CB9850400DE9C33 /* Preview Content */,
 			);
@@ -151,6 +151,14 @@
 			children = (
 			);
 			path = DataLayer;
+			sourceTree = "<group>";
+		};
+		55AB38E02CB9877E00DE9C33 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				55AB38B52CB9850400DE9C33 /* Assets.xcassets */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
