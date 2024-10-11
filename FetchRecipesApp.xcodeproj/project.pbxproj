@@ -22,6 +22,7 @@
 		55AB38F22CB992CA00DE9C33 /* DefaultRecipeRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55AB38F12CB992CA00DE9C33 /* DefaultRecipeRepository.swift */; };
 		55AB38F42CB9971D00DE9C33 /* RecipeAPIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55AB38F32CB9971D00DE9C33 /* RecipeAPIClient.swift */; };
 		55AB38F62CB9978300DE9C33 /* RecipeAPIClientImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55AB38F52CB9978300DE9C33 /* RecipeAPIClientImpl.swift */; };
+		55AB38FC2CB9A60700DE9C33 /* RecipesListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55AB38FB2CB9A60700DE9C33 /* RecipesListViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,6 +62,7 @@
 		55AB38F12CB992CA00DE9C33 /* DefaultRecipeRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultRecipeRepository.swift; sourceTree = "<group>"; };
 		55AB38F32CB9971D00DE9C33 /* RecipeAPIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeAPIClient.swift; sourceTree = "<group>"; };
 		55AB38F52CB9978300DE9C33 /* RecipeAPIClientImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeAPIClientImpl.swift; sourceTree = "<group>"; };
+		55AB38FB2CB9A60700DE9C33 /* RecipesListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipesListViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -246,6 +248,7 @@
 		55AB38F92CB9A48800DE9C33 /* ViewModels */ = {
 			isa = PBXGroup;
 			children = (
+				55AB38FB2CB9A60700DE9C33 /* RecipesListViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -390,6 +393,7 @@
 				55AB38F02CB9927500DE9C33 /* FetchRecipesUseCaseImpl.swift in Sources */,
 				55AB38F22CB992CA00DE9C33 /* DefaultRecipeRepository.swift in Sources */,
 				55AB38E72CB98B9B00DE9C33 /* RecipeDTO.swift in Sources */,
+				55AB38FC2CB9A60700DE9C33 /* RecipesListViewModel.swift in Sources */,
 				55AB38B42CB9850300DE9C33 /* ContentView.swift in Sources */,
 				55AB38B22CB9850300DE9C33 /* FetchRecipesApp.swift in Sources */,
 				55AB38F62CB9978300DE9C33 /* RecipeAPIClientImpl.swift in Sources */,
@@ -485,6 +489,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
@@ -540,6 +545,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
