@@ -7,6 +7,11 @@
 
 import Foundation
 
+enum RecipeAPIError: Error {
+    case invalidResponse
+    case networkError(Error)
+}
+
 protocol RecipeAPIClient {
     func fetchRecipeData() async throws -> Data
 }
