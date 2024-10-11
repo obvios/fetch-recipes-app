@@ -95,6 +95,8 @@
 		55AB38B02CB9850300DE9C33 /* FetchRecipesApp */ = {
 			isa = PBXGroup;
 			children = (
+				55AB38DE2CB986EC00DE9C33 /* DataLayer */,
+				55AB38DD2CB9865400DE9C33 /* Domain */,
 				55AB38DC2CB985EA00DE9C33 /* Presentation */,
 				55AB38B12CB9850300DE9C33 /* FetchRecipesApp.swift */,
 				55AB38B32CB9850300DE9C33 /* ContentView.swift */,
@@ -135,6 +137,20 @@
 			children = (
 			);
 			path = Presentation;
+			sourceTree = "<group>";
+		};
+		55AB38DD2CB9865400DE9C33 /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Domain;
+			sourceTree = "<group>";
+		};
+		55AB38DE2CB986EC00DE9C33 /* DataLayer */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = DataLayer;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
