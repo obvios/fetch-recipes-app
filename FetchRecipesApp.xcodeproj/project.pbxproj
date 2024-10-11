@@ -17,6 +17,7 @@
 		55AB38E72CB98B9B00DE9C33 /* RecipeDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55AB38E62CB98B9B00DE9C33 /* RecipeDTO.swift */; };
 		55AB38E92CB98D4C00DE9C33 /* Recipe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55AB38E82CB98D4C00DE9C33 /* Recipe.swift */; };
 		55AB38EB2CB98E4F00DE9C33 /* FetchRecipesUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55AB38EA2CB98E4F00DE9C33 /* FetchRecipesUseCase.swift */; };
+		55AB38EE2CB98EA300DE9C33 /* RecipeRepositoryProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55AB38ED2CB98EA300DE9C33 /* RecipeRepositoryProtocol.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,7 @@
 		55AB38E62CB98B9B00DE9C33 /* RecipeDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeDTO.swift; sourceTree = "<group>"; };
 		55AB38E82CB98D4C00DE9C33 /* Recipe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Recipe.swift; sourceTree = "<group>"; };
 		55AB38EA2CB98E4F00DE9C33 /* FetchRecipesUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FetchRecipesUseCase.swift; sourceTree = "<group>"; };
+		55AB38ED2CB98EA300DE9C33 /* RecipeRepositoryProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeRepositoryProtocol.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -148,6 +150,7 @@
 		55AB38DD2CB9865400DE9C33 /* Domain */ = {
 			isa = PBXGroup;
 			children = (
+				55AB38EC2CB98E8C00DE9C33 /* Interfaces */,
 				55AB38E32CB98A3000DE9C33 /* Models */,
 				55AB38E22CB98A1700DE9C33 /* UseCases */,
 			);
@@ -200,6 +203,14 @@
 				55AB38E62CB98B9B00DE9C33 /* RecipeDTO.swift */,
 			);
 			path = API;
+			sourceTree = "<group>";
+		};
+		55AB38EC2CB98E8C00DE9C33 /* Interfaces */ = {
+			isa = PBXGroup;
+			children = (
+				55AB38ED2CB98EA300DE9C33 /* RecipeRepositoryProtocol.swift */,
+			);
+			path = Interfaces;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -337,6 +348,7 @@
 				55AB38B22CB9850300DE9C33 /* FetchRecipesApp.swift in Sources */,
 				55AB38EB2CB98E4F00DE9C33 /* FetchRecipesUseCase.swift in Sources */,
 				55AB38E92CB98D4C00DE9C33 /* Recipe.swift in Sources */,
+				55AB38EE2CB98EA300DE9C33 /* RecipeRepositoryProtocol.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
