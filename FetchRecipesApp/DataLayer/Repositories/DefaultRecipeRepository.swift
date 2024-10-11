@@ -1,5 +1,5 @@
 //
-//  RecipeRepository.swift
+//  DefaultRecipeRepository.swift
 //  FetchRecipesApp
 //
 //  Created by Eric Palma on 10/11/24.
@@ -7,7 +7,7 @@
 
 import Foundation
 
-class RecipeRepository: RecipeRepositoryProtocol {
+class DefaultRecipeRepository: RecipeRepositoryProtocol {
     private let apiClient: RecipeAPIClient
     
     init(apiClient: RecipeAPIClient) {
