@@ -16,6 +16,7 @@
 		55AB38D02CB9850400DE9C33 /* FetchRecipesAppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55AB38CF2CB9850400DE9C33 /* FetchRecipesAppUITestsLaunchTests.swift */; };
 		55AB38E72CB98B9B00DE9C33 /* RecipeDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55AB38E62CB98B9B00DE9C33 /* RecipeDTO.swift */; };
 		55AB38E92CB98D4C00DE9C33 /* Recipe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55AB38E82CB98D4C00DE9C33 /* Recipe.swift */; };
+		55AB38EB2CB98E4F00DE9C33 /* FetchRecipesUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55AB38EA2CB98E4F00DE9C33 /* FetchRecipesUseCase.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		55AB38CF2CB9850400DE9C33 /* FetchRecipesAppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FetchRecipesAppUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		55AB38E62CB98B9B00DE9C33 /* RecipeDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeDTO.swift; sourceTree = "<group>"; };
 		55AB38E82CB98D4C00DE9C33 /* Recipe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Recipe.swift; sourceTree = "<group>"; };
+		55AB38EA2CB98E4F00DE9C33 /* FetchRecipesUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FetchRecipesUseCase.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -172,6 +174,7 @@
 		55AB38E22CB98A1700DE9C33 /* UseCases */ = {
 			isa = PBXGroup;
 			children = (
+				55AB38EA2CB98E4F00DE9C33 /* FetchRecipesUseCase.swift */,
 			);
 			path = UseCases;
 			sourceTree = "<group>";
@@ -332,6 +335,7 @@
 				55AB38E72CB98B9B00DE9C33 /* RecipeDTO.swift in Sources */,
 				55AB38B42CB9850300DE9C33 /* ContentView.swift in Sources */,
 				55AB38B22CB9850300DE9C33 /* FetchRecipesApp.swift in Sources */,
+				55AB38EB2CB98E4F00DE9C33 /* FetchRecipesUseCase.swift in Sources */,
 				55AB38E92CB98D4C00DE9C33 /* Recipe.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
