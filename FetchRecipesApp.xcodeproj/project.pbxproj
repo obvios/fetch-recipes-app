@@ -21,6 +21,7 @@
 		55AB38F02CB9927500DE9C33 /* FetchRecipesUseCaseImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55AB38EF2CB9927500DE9C33 /* FetchRecipesUseCaseImpl.swift */; };
 		55AB38F22CB992CA00DE9C33 /* RecipeRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55AB38F12CB992CA00DE9C33 /* RecipeRepository.swift */; };
 		55AB38F42CB9971D00DE9C33 /* RecipeAPIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55AB38F32CB9971D00DE9C33 /* RecipeAPIClient.swift */; };
+		55AB38F62CB9978300DE9C33 /* RecipeAPIClientImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55AB38F52CB9978300DE9C33 /* RecipeAPIClientImpl.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,6 +60,7 @@
 		55AB38EF2CB9927500DE9C33 /* FetchRecipesUseCaseImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FetchRecipesUseCaseImpl.swift; sourceTree = "<group>"; };
 		55AB38F12CB992CA00DE9C33 /* RecipeRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeRepository.swift; sourceTree = "<group>"; };
 		55AB38F32CB9971D00DE9C33 /* RecipeAPIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeAPIClient.swift; sourceTree = "<group>"; };
+		55AB38F52CB9978300DE9C33 /* RecipeAPIClientImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeAPIClientImpl.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -210,6 +212,7 @@
 			children = (
 				55AB38E62CB98B9B00DE9C33 /* RecipeDTO.swift */,
 				55AB38F32CB9971D00DE9C33 /* RecipeAPIClient.swift */,
+				55AB38F52CB9978300DE9C33 /* RecipeAPIClientImpl.swift */,
 			);
 			path = API;
 			sourceTree = "<group>";
@@ -357,6 +360,7 @@
 				55AB38E72CB98B9B00DE9C33 /* RecipeDTO.swift in Sources */,
 				55AB38B42CB9850300DE9C33 /* ContentView.swift in Sources */,
 				55AB38B22CB9850300DE9C33 /* FetchRecipesApp.swift in Sources */,
+				55AB38F62CB9978300DE9C33 /* RecipeAPIClientImpl.swift in Sources */,
 				55AB38F42CB9971D00DE9C33 /* RecipeAPIClient.swift in Sources */,
 				55AB38EB2CB98E4F00DE9C33 /* FetchRecipesUseCase.swift in Sources */,
 				55AB38E92CB98D4C00DE9C33 /* Recipe.swift in Sources */,
