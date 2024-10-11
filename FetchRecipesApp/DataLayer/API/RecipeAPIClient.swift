@@ -6,3 +6,7 @@
 //
 
 import Foundation
+
+protocol RecipeAPIClient {
+    func fetchRecipeData() async throws -> Data
+}
