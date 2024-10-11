@@ -150,7 +150,7 @@
 		55AB38DC2CB985EA00DE9C33 /* Presentation */ = {
 			isa = PBXGroup;
 			children = (
-				55AB38F72CB9A40B00DE9C33 /* RecipesListFlow */,
+				55AB38F72CB9A40B00DE9C33 /* RecipesFlow */,
 				55AB38B32CB9850300DE9C33 /* ContentView.swift */,
 			);
 			path = Presentation;
@@ -226,11 +226,35 @@
 			path = Interfaces;
 			sourceTree = "<group>";
 		};
-		55AB38F72CB9A40B00DE9C33 /* RecipesListFlow */ = {
+		55AB38F72CB9A40B00DE9C33 /* RecipesFlow */ = {
+			isa = PBXGroup;
+			children = (
+				55AB38F82CB9A46D00DE9C33 /* RecipesListScreen */,
+			);
+			path = RecipesFlow;
+			sourceTree = "<group>";
+		};
+		55AB38F82CB9A46D00DE9C33 /* RecipesListScreen */ = {
+			isa = PBXGroup;
+			children = (
+				55AB38FA2CB9A49200DE9C33 /* Views */,
+				55AB38F92CB9A48800DE9C33 /* ViewModels */,
+			);
+			path = RecipesListScreen;
+			sourceTree = "<group>";
+		};
+		55AB38F92CB9A48800DE9C33 /* ViewModels */ = {
 			isa = PBXGroup;
 			children = (
 			);
-			path = RecipesListFlow;
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		55AB38FA2CB9A49200DE9C33 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
