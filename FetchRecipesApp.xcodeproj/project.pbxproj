@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		557A26052CBB284200DFCB4D /* RecipeRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 557A26042CBB284200DFCB4D /* RecipeRowView.swift */; };
 		55AB38B22CB9850300DE9C33 /* FetchRecipesApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55AB38B12CB9850300DE9C33 /* FetchRecipesApp.swift */; };
 		55AB38B42CB9850300DE9C33 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55AB38B32CB9850300DE9C33 /* ContentView.swift */; };
 		55AB38B62CB9850400DE9C33 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 55AB38B52CB9850400DE9C33 /* Assets.xcassets */; };
@@ -44,6 +45,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		557A26042CBB284200DFCB4D /* RecipeRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeRowView.swift; sourceTree = "<group>"; };
 		55AB38AE2CB9850300DE9C33 /* FetchRecipesApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FetchRecipesApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		55AB38B12CB9850300DE9C33 /* FetchRecipesApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FetchRecipesApp.swift; sourceTree = "<group>"; };
 		55AB38B32CB9850300DE9C33 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -258,6 +260,7 @@
 		55AB38FA2CB9A49200DE9C33 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				557A26042CBB284200DFCB4D /* RecipeRowView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -407,6 +410,7 @@
 				55AB38F62CB9978300DE9C33 /* RecipeAPIClientImpl.swift in Sources */,
 				55AB38F42CB9971D00DE9C33 /* RecipeAPIClient.swift in Sources */,
 				55AB38EB2CB98E4F00DE9C33 /* FetchRecipesUseCase.swift in Sources */,
+				557A26052CBB284200DFCB4D /* RecipeRowView.swift in Sources */,
 				55AB38E92CB98D4C00DE9C33 /* Recipe.swift in Sources */,
 				55AB38EE2CB98EA300DE9C33 /* RecipeRepository.swift in Sources */,
 			);
