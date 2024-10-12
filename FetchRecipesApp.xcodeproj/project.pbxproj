@@ -23,6 +23,7 @@
 		55AB38F42CB9971D00DE9C33 /* RecipeAPIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55AB38F32CB9971D00DE9C33 /* RecipeAPIClient.swift */; };
 		55AB38F62CB9978300DE9C33 /* RecipeAPIClientImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55AB38F52CB9978300DE9C33 /* RecipeAPIClientImpl.swift */; };
 		55AB38FC2CB9A60700DE9C33 /* RecipesListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55AB38FB2CB9A60700DE9C33 /* RecipesListViewModel.swift */; };
+		55AB38FF2CBB01A400DE9C33 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = 55AB38FE2CBB01A400DE9C33 /* Kingfisher */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -70,6 +71,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				55AB38FF2CBB01A400DE9C33 /* Kingfisher in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -276,6 +278,9 @@
 			dependencies = (
 			);
 			name = FetchRecipesApp;
+			packageProductDependencies = (
+				55AB38FE2CBB01A400DE9C33 /* Kingfisher */,
+			);
 			productName = FetchRecipesApp;
 			productReference = 55AB38AE2CB9850300DE9C33 /* FetchRecipesApp.app */;
 			productType = "com.apple.product-type.application";
@@ -348,6 +353,9 @@
 				Base,
 			);
 			mainGroup = 55AB38A52CB9850300DE9C33;
+			packageReferences = (
+				55AB38FD2CBB01A400DE9C33 /* XCRemoteSwiftPackageReference "Kingfisher" */,
+			);
 			productRefGroup = 55AB38AF2CB9850300DE9C33 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -751,6 +759,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		55AB38FD2CBB01A400DE9C33 /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/onevcat/Kingfisher.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 8.0.3;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		55AB38FE2CBB01A400DE9C33 /* Kingfisher */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 55AB38FD2CBB01A400DE9C33 /* XCRemoteSwiftPackageReference "Kingfisher" */;
+			productName = Kingfisher;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 55AB38A62CB9850300DE9C33 /* Project object */;
 }
