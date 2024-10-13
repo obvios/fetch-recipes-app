@@ -16,6 +16,16 @@ struct Recipe: Identifiable {
     let sourceUrl: URL?
     let youtubeUrl: URL?
 
+    init(id: String, name: String, cuisine: String, largeImageUrl: String, smallImageUrl: String, sourceUrl: URL?, youtubeUrl: URL?) {
+        self.id = id
+        self.name = name
+        self.cuisine = cuisine
+        self.largeImageUrl = largeImageUrl
+        self.smallImageUrl = smallImageUrl
+        self.sourceUrl = sourceUrl
+        self.youtubeUrl = youtubeUrl
+    }
+    
     // Initializer to map from DTO
     init(from dto: RecipeDTO) {
         self.id = dto.uuid
