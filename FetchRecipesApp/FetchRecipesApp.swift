@@ -12,7 +12,7 @@ struct FetchRecipesApp: App {
     var body: some Scene {
         WindowGroup {
             // Initialize dependencies and inject them into the view
-            let apiClient = RecipeAPIClientImpl()
+            let apiClient = DefaultRecipeAPIClient()
             let repository = DefaultRecipeRepository(apiClient: apiClient)
             let fetchRecipesUseCase = DefaultFetchRecipesUseCase(repository: repository)
             let viewModel = RecipesListViewModel(fetchRecipesUseCase: fetchRecipesUseCase)

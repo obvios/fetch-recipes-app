@@ -1,5 +1,5 @@
 //
-//  RecipeAPIClientImpl.swift
+//  DefaultRecipeAPIClient.swift
 //  FetchRecipesApp
 //
 //  Created by Eric Palma on 10/11/24.
@@ -7,7 +7,7 @@
 
 import Foundation
 
-class RecipeAPIClientImpl: RecipeAPIClient {
+class DefaultRecipeAPIClient: RecipeAPIClient {
     private let baseURL = URL(string: "https://d3jbb8n5wk0qxi.cloudfront.net/")!
 
     func fetchRecipeData() async throws -> Data {
