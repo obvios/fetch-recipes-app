@@ -18,8 +18,8 @@ class DefaultRecipeRepository: RecipeRepository {
         do {
             let data = try await apiClient.fetchRecipeData()
             let decoder = JSONDecoder()
-            let recipeDTOs = try decoder.decode([RecipeDTO].self, from: data)
-            return recipeDTOs.map { Recipe(from: $0) }
+            let recipesDTO = try decoder.decode(RecipesDTO.self, from: data)
+            return recipesDTO.recipes.map { Recipe(from: $0) }
         } catch let error as RecipeAPIError {
             // Pass along RecipeAPIError directly to the caller
             throw error
