@@ -104,7 +104,7 @@
 			isa = PBXGroup;
 			children = (
 				557A260B2CBC2B3700DFCB4D /* Mocks */,
-				557A26092CBC2AAE00DFCB4D /* DefaultFetchRecipesUseCaseTests.swift */,
+				557A26122CBC2E9500DFCB4D /* UseCases */,
 			);
 			path = Domain;
 			sourceTree = "<group>";
@@ -115,6 +115,14 @@
 				557A26102CBC2BBE00DFCB4D /* MockRecipeRepository.swift */,
 			);
 			path = Mocks;
+			sourceTree = "<group>";
+		};
+		557A26122CBC2E9500DFCB4D /* UseCases */ = {
+			isa = PBXGroup;
+			children = (
+				557A26092CBC2AAE00DFCB4D /* DefaultFetchRecipesUseCaseTests.swift */,
+			);
+			path = UseCases;
 			sourceTree = "<group>";
 		};
 		55AB38A52CB9850300DE9C33 = {
