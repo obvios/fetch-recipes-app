@@ -1,5 +1,5 @@
 //
-//  FetchRecipesUseCaseTests.swift
+//  DefaultFetchRecipesUseCaseTests.swift
 //  FetchRecipesAppTests
 //
 //  Created by Eric Palma on 10/13/24.
@@ -8,7 +8,7 @@
 import XCTest
 @testable import FetchRecipesApp
 
-final class FetchRecipesUseCaseTests: XCTestCase {
+final class DefaultFetchRecipesUseCaseTests: XCTestCase {
     var useCase: DefaultFetchRecipesUseCase!
     var mockRepository: MockRecipeRepository!
     
