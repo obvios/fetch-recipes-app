@@ -6,3 +6,16 @@
 //
 
 import Foundation
+@testable import FetchRecipesApp
+
+class MockRecipeRepository: RecipeRepository {
+    var recipesToReturn: [Recipe] = []
+    var errorToThrow: Error?
+
+    func fetchRecipes() async throws -> [Recipe] {
+        if let error = errorToThrow {
+            throw error
+        }
+        return recipesToReturn
+    }
+}
