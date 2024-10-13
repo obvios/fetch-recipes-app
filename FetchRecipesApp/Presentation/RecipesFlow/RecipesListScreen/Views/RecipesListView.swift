@@ -1,5 +1,5 @@
 //
-//  RecipeListView.swift
+//  RecipesListView.swift
 //  FetchRecipesApp
 //
 //  Created by Eric Palma on 10/13/24.
@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct RecipeListView: View {
+struct RecipesListView: View {
     @StateObject private var viewModel: RecipesListViewModel
         
     init(viewModel: RecipesListViewModel) {
