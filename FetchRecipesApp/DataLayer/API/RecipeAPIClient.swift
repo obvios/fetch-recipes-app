@@ -7,9 +7,21 @@
 
 import Foundation
 
-enum RecipeAPIError: Error {
+enum RecipeAPIError: Error, Equatable {
     case invalidResponse
     case networkError(Error)
+    
+    static func == (lhs: RecipeAPIError, rhs: RecipeAPIError) -> Bool {
+        switch (lhs, rhs) {
+        case (.invalidResponse, .invalidResponse):
+            return true
+        case (.networkError, .networkError):
+            // Only check that both are `networkError`, ignoring associated `Error` values
+            return true
+        default:
+            return false
+        }
+    }
 }
 
 protocol RecipeAPIClient {
