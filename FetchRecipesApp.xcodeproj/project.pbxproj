@@ -125,6 +125,21 @@
 			path = UseCases;
 			sourceTree = "<group>";
 		};
+		557A26132CBC2EC400DFCB4D /* DataLayer */ = {
+			isa = PBXGroup;
+			children = (
+				557A26142CBC2ECE00DFCB4D /* Repositories */,
+			);
+			path = DataLayer;
+			sourceTree = "<group>";
+		};
+		557A26142CBC2ECE00DFCB4D /* Repositories */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Repositories;
+			sourceTree = "<group>";
+		};
 		55AB38A52CB9850300DE9C33 = {
 			isa = PBXGroup;
 			children = (
@@ -170,6 +185,7 @@
 		55AB38C22CB9850400DE9C33 /* FetchRecipesAppTests */ = {
 			isa = PBXGroup;
 			children = (
+				557A26132CBC2EC400DFCB4D /* DataLayer */,
 				557A26082CBC2A8F00DFCB4D /* Domain */,
 				55AB38C32CB9850400DE9C33 /* FetchRecipesAppTests.swift */,
 			);
