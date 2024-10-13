@@ -19,6 +19,10 @@ class RecipesListViewModel: ObservableObject {
     // MARK: - Initializer
     init(fetchRecipesUseCase: FetchRecipesUseCase) {
         self.fetchRecipesUseCase = fetchRecipesUseCase
+        // Requests recipes once during app startup.
+        Task {
+            await loadRecipes()
+        }
     }
     
     // MARK: - Methods
