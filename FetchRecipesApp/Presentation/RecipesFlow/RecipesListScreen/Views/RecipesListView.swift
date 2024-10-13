@@ -16,14 +16,20 @@ struct RecipesListView: View {
 
     var body: some View {
         VStack {
+            Text("Recipes")
+                .font(.largeTitle)
+                .fontWeight(.bold)
+                .padding()
             if viewModel.isLoading {
                 ProgressView("Loading recipes...")
                     .padding()
+                Spacer()
             } else if let errorMessage = viewModel.errorMessage {
                 Text(errorMessage)
                     .foregroundColor(.red)
                     .multilineTextAlignment(.center)
                     .padding()
+                Spacer()
             } else {
                 List(viewModel.recipes) { recipe in
                     RecipeRowView(recipe: recipe)
@@ -32,12 +38,6 @@ struct RecipesListView: View {
                 .refreshable {
                     await viewModel.loadRecipes()
                 }
-            }
-        }
-        .navigationTitle("Recipes")
-        .onAppear {
-            Task {
-                await viewModel.loadRecipes()
             }
         }
     }
