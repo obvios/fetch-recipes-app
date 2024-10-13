@@ -23,7 +23,7 @@ struct Recipe: Identifiable {
         self.cuisine = dto.cuisine
         self.largeImageUrl = dto.photo_url_large
         self.smallImageUrl = dto.photo_url_small
-        self.sourceUrl = URL(string: dto.source_url)
-        self.youtubeUrl = URL(string: dto.youtube_url)
+        self.sourceUrl = dto.source_url.flatMap { URL(string: $0) }
+        self.youtubeUrl = dto.youtube_url.flatMap { URL(string: $0) }
     }
 }
