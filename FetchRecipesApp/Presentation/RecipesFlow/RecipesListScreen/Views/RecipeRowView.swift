@@ -40,11 +40,5 @@ struct RecipeRowView: View {
 }
 
 #Preview {
-    RecipeRowView(recipe: Recipe(from: .init(cuisine: "British",
-                                             name: "Apple Frangipan Tart",
-                                             photo_url_large: "https://d3jbb8n5wk0qxi.cloudfront.net/photos/b9ab0071-b281-4bee-b361-ec340d405320/small.jpg",
-                                             photo_url_small: "https://d3jbb8n5wk0qxi.cloudfront.net/photos/b9ab0071-b281-4bee-b361-ec340d405320/small.jpg",
-                                             source_url: "test",
-                                             uuid: "test1",
-                                             youtube_url: "test")))
+    RecipeRowView(recipe: Recipe(id: "1", name: "Cake", cuisine: "American", largeImageUrl: "test", smallImageUrl: "https://d3jbb8n5wk0qxi.cloudfront.net/photos/6d8e878b-0ca8-4173-94b7-60a006b676d6/small.jpg", sourceUrl: nil, youtubeUrl: nil))
 }
