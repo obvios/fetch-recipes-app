@@ -3,6 +3,9 @@
 
 2. Clone the repository to your local machine:
 ```
+git@github.com:obvios/fetch-recipes-app.git
+```
+```
 https://github.com/obvios/fetch-recipes-app.git
 ```
 
