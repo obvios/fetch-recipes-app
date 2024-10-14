@@ -11,7 +11,7 @@ import Foundation
 class RecipesListViewModel: ObservableObject {
     // MARK: - Published Properties (UI States)
     @Published var recipes: [Recipe] = []
-    @Published var isLoading: Bool = false
+    @Published var isLoadingInitialData: Bool = false
     @Published var errorMessage: String? = nil
     
     private let fetchRecipesUseCase: FetchRecipesUseCase
@@ -21,14 +21,15 @@ class RecipesListViewModel: ObservableObject {
         self.fetchRecipesUseCase = fetchRecipesUseCase
         // Requests recipes once during app startup.
         Task {
+            isLoadingInitialData = true
             await loadRecipes()
+            isLoadingInitialData = false
         }
     }
     
     // MARK: - Methods
     func loadRecipes() async {
         do {
-            isLoading = true
             errorMessage = nil
             
             let recipes = try await fetchRecipesUseCase.execute()
@@ -38,14 +39,11 @@ class RecipesListViewModel: ObservableObject {
             } else {
                 self.recipes = recipes
             }
-            isLoading = false
         } catch FetchRecipesUseCaseError.emptyData {
             errorMessage = "No recipes available."
-            isLoading = false
         } catch {
             // Handle any other unexpected errors
             errorMessage = "An unexpected error occurred. Please try again."
-            isLoading = false
         }
     }
 }

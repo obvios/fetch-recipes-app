@@ -20,7 +20,9 @@ struct RecipesListView: View {
                 .font(.largeTitle)
                 .fontWeight(.bold)
                 .padding()
-            if viewModel.isLoading {
+            if viewModel.isLoadingInitialData {
+                // Custom progress view only for initial load.
+                // Subsequent refreshes use built in `refreshable` capability to show progress
                 ProgressView("Loading recipes...")
                     .padding()
                 Spacer()
