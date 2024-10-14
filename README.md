@@ -2,8 +2,9 @@
 1. Ensure you have **Xcode 15.3** or later installed on your Mac.
 
 2. Clone the repository to your local machine:
-
-3. 
+```
+https://github.com/obvios/fetch-recipes-app.git
+```
 
 # Focus Areas: What specific areas of the project did you prioritize? Why did you choose to focus on these areas?
 
