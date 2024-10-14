@@ -36,24 +36,10 @@ final class RecipesListViewModelTests: XCTestCase {
         await viewModel.loadRecipes()
         
         // Assert
-        XCTAssertFalse(viewModel.isLoading)
+        XCTAssertFalse(viewModel.isLoadingInitialData)
         XCTAssertNil(viewModel.errorMessage)
         XCTAssertEqual(viewModel.recipes.count, 1)
         XCTAssertEqual(viewModel.recipes.first?.name, "Test Recipe")
-    }
-    
-    @MainActor
-    func testLoadRecipes_withEmptyRecipes_shouldSetErrorMessage() async {
-        // Arrange
-        mockUseCase.recipesToReturn = []
-        
-        // Act
-        await viewModel.loadRecipes()
-        
-        // Assert
-        XCTAssertFalse(viewModel.isLoading)
-        XCTAssertEqual(viewModel.errorMessage, "No recipes available.")
-        XCTAssertEqual(viewModel.recipes.count, 0)
     }
     
     @MainActor
@@ -65,7 +51,7 @@ final class RecipesListViewModelTests: XCTestCase {
         await viewModel.loadRecipes()
         
         // Assert
-        XCTAssertFalse(viewModel.isLoading)
+        XCTAssertFalse(viewModel.isLoadingInitialData)
         XCTAssertEqual(viewModel.errorMessage, "No recipes available.")
         XCTAssertEqual(viewModel.recipes.count, 0)
     }
@@ -79,7 +65,7 @@ final class RecipesListViewModelTests: XCTestCase {
         await viewModel.loadRecipes()
         
         // Assert
-        XCTAssertFalse(viewModel.isLoading)
+        XCTAssertFalse(viewModel.isLoadingInitialData)
         XCTAssertEqual(viewModel.errorMessage, "An unexpected error occurred. Please try again.")
         XCTAssertEqual(viewModel.recipes.count, 0)
     }
