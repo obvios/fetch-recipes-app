@@ -33,12 +33,7 @@ class RecipesListViewModel: ObservableObject {
             errorMessage = nil
             
             let recipes = try await fetchRecipesUseCase.execute()
-            // Check if data is empty, update UI state accordingly
-            if recipes.isEmpty {
-                errorMessage = "No recipes available."
-            } else {
-                self.recipes = recipes
-            }
+            self.recipes = recipes
         } catch FetchRecipesUseCaseError.emptyData {
             errorMessage = "No recipes available."
         } catch {
