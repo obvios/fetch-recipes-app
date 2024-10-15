@@ -40,8 +40,9 @@ I spent approximately 6-7 hours on this project. I allocated time as follows:
 - 25%: Writing unit tests to verify functionality and test edge cases
 
 # Trade-offs and Decisions: Did you make any significant trade-offs in your approach?
-One significant trade off was the use of a third party image caching library, Kingfisher. This was a choice I made for rapid development, at the cost of introducing a
-dependency on a third party library. Of course I could have abstracted it behind a protocol/facade, however I chose not to for times sake.
+Image Caching: I chose to use the third-party Kingfisher library for image caching to speed up development. While this introduces a third-party dependency, Kingfisher’s ease of integration, SwiftUI support, and performance were well-suited to the app’s requirements. Given more time, I would abstract it behind a protocol/facade to maintain flexibility.
+
+Dependency Injection: Due to time constraints, I opted not to use a dedicated dependency injection framework. Instead, I initialized and injected dependencies at the app entry point. With more time, I would have implemented a dependency container to manage initialization more cleanly.
 
 I also decided not to spend time on setting up a dependency injection framework, again due to time. So instead I simply initialize and inject the dependencies at the app
 entry point. If given more time, I would have preferred to implement a dependency container responsible for initializing important objects.
