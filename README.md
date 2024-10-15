@@ -33,9 +33,11 @@ Ensure you have an active internet connection for the initial download of the Ki
 1. Architecture: I prioritized setting up a Clean Architecture to establish clear boundaries, maintain single responsibility, and emphasize testability. With a clear separation of concerns, the project becomes more scalable and maintainable, which I believe adds long-term value.
 
 # Time Spent: Approximately how long did you spend working on this project? How did you allocate your time?
-I spent approximately 6-7 hours total. I spent the first quarter of this time creating the technial design document and defining what the different components of the app
-would be. I spent the second quarter on implementing the domain and data access layers. The third quarter was spent on the presentation layer. Finally, the last quarter of my
-total time was spent on unit testing.
+I spent approximately 6-7 hours on this project. I allocated time as follows:
+- 25%: Creating a technical design document and defining core components
+- 25%: Implementing the domain and data access layers
+- 25%: Building the presentation layer and testing functionality
+- 25%: Writing unit tests to verify functionality and test edge cases
 
 # Trade-offs and Decisions: Did you make any significant trade-offs in your approach?
 One significant trade off was the use of a third party image caching library, Kingfisher. This was a choice I made for rapid development, at the cost of introducing a
