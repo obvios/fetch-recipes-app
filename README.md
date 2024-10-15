@@ -36,7 +36,7 @@ Ensure you have an active internet connection for the initial download of the Ki
 
 # Time Spent: Approximately how long did you spend working on this project? How did you allocate your time?
 I spent approximately 6-7 hours on this project. I allocated time as follows:
-- 25%: Creating a technical design document and defining core components
+- 25%: Creating a technical design document (see TechnicalDesignDoc.pdf) and defining core components
 - 25%: Implementing the domain and data access layers
 - 25%: Building the presentation layer and testing functionality
 - 25%: Writing unit tests to verify functionality and test edge cases
