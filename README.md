@@ -56,3 +56,5 @@ Yes, I used the Kingfisher library for image caching due to its straightforward 
 I recognize that I could have completed the assignment more quickly with a simpler approach to architecture. However, I believe the increased testability and clarity achieved with Clean Architecture were worth the initial setup time.
 
 Additionally, while I streamlined dependency injection to prioritize other parts of the application, given more time, I would refactor this area for a more scalable dependency management solution.
+
+Lastly, although the UI was simple, given more time I would also prefer to further refine the styling by defining reusable styles and using constants for padding and layout values instead of hard-coding them. This would improve consistency, make the code more maintainable, and allow for easier adjustments to the design if needed.
