@@ -30,13 +30,32 @@ If you encounter any issues with the Kingfisher package:
 Ensure you have an active internet connection for the initial download of the Kingfisher package and for the app to fetch data and images.
 
 # Focus Areas: What specific areas of the project did you prioritize? Why did you choose to focus on these areas?
+1. Architecture
+I chose to focus on setting up a Clean Architecture to establish boundaries, ensure single responsability, and emphasize testability.
+I believe that by setting up the project with clear seapration of concerns it will make it easier to scale and maintain.
 
 # Time Spent: Approximately how long did you spend working on this project? How did you allocate your time?
+I spent approximately 6-7 hours total. I spent the first quarter of this time creating the technial design document and defining what the different components of the app
+would be. I spent the second quarter on implementing the domain and data access layers. The third quarter was spent on the presentation layer. Finally, the last quarter of my
+total time was spent on unit testing.
 
 # Trade-offs and Decisions: Did you make any significant trade-offs in your approach?
+One significant trade off was the use of a third party image caching library, Kingfisher. This was a choice I made for rapid development, at the cost of introducing a
+dependency on a third party library. Of course I could have abstracted it behind a protocol/facade, however I chose not to for times sake.
+
+I also decided not to spend time on setting up a dependency injection framework, again due to time. So instead I simply initialize and inject the dependencies at the app
+entry point. If given more time, I would have preferred to implement a dependency container responsible for initializing important objects.
 
 # Weakest Part of the Project: What do you think is the weakest part of your project?
+I believe the weakest part of my project is the networking code. Ideally, I would implemement a networking infrastructure layer more robustly, with protocols and generics.
+This would reduce boilder plate code for using APIs and could help to track general metrics.
 
 # External Code and Dependencies: Did you use any external code, libraries, or dependencies?
+Yes, I used the Kingfisher third party library to handle image caching. I chose it for it's straightforward integration with the Swift Package Manager sytem, it's SwiftUI support, and ease of use
+for the apps use case.
 
 # Additional Information: Is there anything else we should know? Feel free to share any insights or constraints you encountered.
+I realize that I could have completed the assignemnt quicker if I had put less emphasis on using a Clean architecture approach, due to the increased overhead to set up. However,
+I believe that the increased testability of the core peices of the app was worth it.
+
+I also want to point out that I took a shortcut with dependency injection. At that point I was more focused on developing a clean UI and testing for edge cases.
