@@ -32,6 +32,8 @@ Ensure you have an active internet connection for the initial download of the Ki
 # Focus Areas: What specific areas of the project did you prioritize? Why did you choose to focus on these areas?
 1. Architecture: I prioritized setting up a Clean Architecture to establish clear boundaries, maintain single responsibility, and emphasize testability. With a clear separation of concerns, the project becomes more scalable and maintainable, which I believe adds long-term value.
 
+2. Unit Testing: I dedicated time to setting up mocks and testing across the domain, data access, and presentation layers. This approach allowed me to validate business logic, data handling, and state management independently.
+
 # Time Spent: Approximately how long did you spend working on this project? How did you allocate your time?
 I spent approximately 6-7 hours on this project. I allocated time as follows:
 - 25%: Creating a technical design document and defining core components
