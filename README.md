@@ -44,9 +44,6 @@ Image Caching: I chose to use the third-party Kingfisher library for image cachi
 
 Dependency Injection: Due to time constraints, I opted not to use a dedicated dependency injection framework. Instead, I initialized and injected dependencies at the app entry point. With more time, I would have implemented a dependency container to manage initialization more cleanly.
 
-I also decided not to spend time on setting up a dependency injection framework, again due to time. So instead I simply initialize and inject the dependencies at the app
-entry point. If given more time, I would have preferred to implement a dependency container responsible for initializing important objects.
-
 # Weakest Part of the Project: What do you think is the weakest part of your project?
 I believe the weakest part of my project is the networking code. Ideally, I would implemement a networking infrastructure layer more robustly, with protocols and generics.
 This would reduce boilder plate code for using APIs and could help to track general metrics.
