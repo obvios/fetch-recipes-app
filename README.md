@@ -30,9 +30,7 @@ If you encounter any issues with the Kingfisher package:
 Ensure you have an active internet connection for the initial download of the Kingfisher package and for the app to fetch data and images.
 
 # Focus Areas: What specific areas of the project did you prioritize? Why did you choose to focus on these areas?
-1. Architecture
-I chose to focus on setting up a Clean Architecture to establish boundaries, ensure single responsability, and emphasize testability.
-I believe that by setting up the project with clear seapration of concerns it will make it easier to scale and maintain.
+1. Architecture: I prioritized setting up a Clean Architecture to establish clear boundaries, maintain single responsibility, and emphasize testability. With a clear separation of concerns, the project becomes more scalable and maintainable, which I believe adds long-term value.
 
 # Time Spent: Approximately how long did you spend working on this project? How did you allocate your time?
 I spent approximately 6-7 hours total. I spent the first quarter of this time creating the technial design document and defining what the different components of the app
