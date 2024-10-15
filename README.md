@@ -45,15 +45,12 @@ Image Caching: I chose to use the third-party Kingfisher library for image cachi
 Dependency Injection: Due to time constraints, I opted not to use a dedicated dependency injection framework. Instead, I initialized and injected dependencies at the app entry point. With more time, I would have implemented a dependency container to manage initialization more cleanly.
 
 # Weakest Part of the Project: What do you think is the weakest part of your project?
-I believe the weakest part of my project is the networking code. Ideally, I would implemement a networking infrastructure layer more robustly, with protocols and generics.
-This would reduce boilder plate code for using APIs and could help to track general metrics.
+I believe the weakest part is the networking code. Ideally, I would implement a more robust networking infrastructure using protocols and generics to reduce boilerplate, with support for tracking metrics such as request/response times and error rates.
 
 # External Code and Dependencies: Did you use any external code, libraries, or dependencies?
-Yes, I used the Kingfisher third party library to handle image caching. I chose it for it's straightforward integration with the Swift Package Manager sytem, it's SwiftUI support, and ease of use
-for the apps use case.
+Yes, I used the Kingfisher library for image caching due to its straightforward integration with Swift Package Manager, SwiftUI support, and suitability for this project’s use case.
 
 # Additional Information: Is there anything else we should know? Feel free to share any insights or constraints you encountered.
-I realize that I could have completed the assignemnt quicker if I had put less emphasis on using a Clean architecture approach, due to the increased overhead to set up. However,
-I believe that the increased testability of the core peices of the app was worth it.
+I recognize that I could have completed the assignment more quickly with a simpler approach to architecture. However, I believe the increased testability and clarity achieved with Clean Architecture were worth the initial setup time.
 
-I also want to point out that I took a shortcut with dependency injection. At that point I was more focused on developing a clean UI and testing for edge cases.
+Additionally, while I streamlined dependency injection to prioritize other parts of the application, given more time, I would refactor this area for a more scalable dependency management solution.
