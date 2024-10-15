@@ -47,7 +47,7 @@ Image Caching: I chose to use the third-party Kingfisher library for image cachi
 Dependency Injection: Due to time constraints, I opted not to use a dedicated dependency injection framework. Instead, I initialized and injected dependencies at the app entry point. With more time, I would have implemented a dependency container to manage initialization more cleanly.
 
 # Weakest Part of the Project: What do you think is the weakest part of your project?
-I believe the weakest part is the networking code. Ideally, I would implement a more robust networking infrastructure using protocols and generics to reduce boilerplate, with support for tracking metrics such as request/response times and error rates.
+I believe the weakest part is the networking code. Ideally, I would implement a more robust networking infrastructure using protocols and generics to reduce boilerplate, increased configurability, and with support for tracking metrics such as request/response times and error rates.
 
 # External Code and Dependencies: Did you use any external code, libraries, or dependencies?
 Yes, I used the Kingfisher library for image caching due to its straightforward integration with Swift Package Manager, SwiftUI support, and suitability for this project’s use case.
