@@ -42,5 +42,8 @@ struct RecipesListView: View {
                 }
             }
         }
+        .task {
+            await viewModel.loadIinitialData()
+        }
     }
 }

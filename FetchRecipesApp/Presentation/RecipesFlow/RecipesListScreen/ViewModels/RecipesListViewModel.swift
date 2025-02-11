@@ -19,17 +19,22 @@ class RecipesListViewModel: ObservableObject {
     // MARK: - Initializer
     init(fetchRecipesUseCase: FetchRecipesUseCase) {
         self.fetchRecipesUseCase = fetchRecipesUseCase
-        // Requests recipes once during app startup.
-        Task {
-            isLoadingInitialData = true
-            await loadRecipes()
-            isLoadingInitialData = false
-        }
     }
     
     // MARK: - Methods
+    // Requests recipes once during app startup.
+    func loadIinitialData() async {
+        guard !isLoadingInitialData else { return }
+        
+        print("loading initial data...")
+        isLoadingInitialData = true
+        await loadRecipes()
+        isLoadingInitialData = false
+    }
+    
     func loadRecipes() async {
         do {
+            print("loading recipes...")
             errorMessage = nil
             
             let recipes = try await fetchRecipesUseCase.execute()
